@@ -3,7 +3,6 @@ package cl.vice.back.controller;
 import cl.vice.back.exception.InvalidInputException;
 import cl.vice.back.model.Insurance;
 import cl.vice.back.service.IInsuranceService;
-import io.swagger.annotations.Api;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -11,13 +10,11 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Map;
 
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
 @Slf4j
 @RequestMapping(value = "/insurance")
-@Api(value = "Insurance controller", produces = "application/json")
 public class InsuranceController {
 
     @Autowired

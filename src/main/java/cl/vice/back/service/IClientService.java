@@ -26,5 +26,4 @@ public interface IClientService {
     public Map<String, Long> uniqueInsurance();
 
     public  Map<String, Integer> clientWithLessFunds();
-
-    }
+}

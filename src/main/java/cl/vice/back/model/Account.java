@@ -1,38 +1,36 @@
 package cl.vice.back.model;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.*;
 import javax.persistence.*;
 
 @Entity
 @Table(name = "\"account\"")
-@ApiModel(value = "Account table", description = "Account table")
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
 public class Account {
 
     @Id
-    @ApiModelProperty(value = "Account Id")
+    @Schema(description = "Unique Account ID", example = "1")
     @Getter
     @Setter
     @Column(name = "id", unique = true, nullable = false)
     private Integer id;
 
-    @ApiModelProperty(value = "Client id")
+    @Schema(description = "ID of the Client associated with the account", example = "1001") // Reemplazo de ApiModelProperty
     @Column(name = "client_id")
     @Getter
     @Setter
     private Integer clientId;
 
-    @ApiModelProperty(value = "Insurance id")
+    @Schema(description = "ID of the Insurance associated with the account", example = "2001") // Reemplazo de ApiModelProperty
     @Column(name = "insurance_id")
     @Getter
     @Setter
     private Integer insuranceId;
 
-    @ApiModelProperty(value = "Balance")
+    @Schema(description = "Balance amount in the account", example = "15000")
     @Column(name = "balance")
     @Getter
     @Setter

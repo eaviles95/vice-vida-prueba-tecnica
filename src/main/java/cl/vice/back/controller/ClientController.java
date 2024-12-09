@@ -2,9 +2,7 @@ package cl.vice.back.controller;
 
 import cl.vice.back.exception.InvalidInputException;
 import cl.vice.back.model.Client;
-import cl.vice.back.model.Insurance;
 import cl.vice.back.service.IClientService;
-import io.swagger.annotations.Api;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -18,7 +16,6 @@ import java.util.Map;
 @RestController
 @Slf4j
 @RequestMapping(value = "/client")
-@Api(value = "Client controller", produces = "application/json")
 public class ClientController {
 
     @Autowired

@@ -3,7 +3,6 @@ package cl.vice.back.controller;
 import cl.vice.back.exception.InvalidInputException;
 import cl.vice.back.model.Account;
 import cl.vice.back.service.IAccountService;
-import io.swagger.annotations.Api;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -16,7 +15,6 @@ import java.util.List;
 @RestController
 @Slf4j
 @RequestMapping(value = "/account")
-@Api(value = "Account controller", produces = "application/json")
 public class AccountController {
 
     @Autowired

@@ -1,7 +1,7 @@
 package cl.vice.back.model;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.*;
 
 import javax.persistence.Column;
@@ -11,26 +11,25 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "\"client\"")
-@ApiModel(value = "Client table", description = "Client table")
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
 public class Client {
 
     @Id
-    @ApiModelProperty(value = "Client Id")
+    @Schema(description = "Unique Client ID", example = "1")
     @Getter
     @Setter
     @Column(name = "id", unique = true, nullable = false)
     private Integer id;
 
-    @ApiModelProperty(value = "Name")
+    @Schema(description = "Client Name", example = "John Doe")
     @Column(name = "name")
     @Getter
     @Setter
     private String name;
 
-    @ApiModelProperty(value = "Rut")
+    @Schema(description = "Rut number", example = "12345678-9")
     @Column(name = "rut")
     @Getter
     @Setter
