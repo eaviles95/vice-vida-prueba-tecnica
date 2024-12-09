@@ -28,6 +28,7 @@ Para probar los endpoints, puede acceder al siguiente enlace:
 ```swagger
     http://localhost:8081/swagger-ui.html#
 ```
+Luego, debe accionar los endpoints de carga inicial de datos, éstos son saveClients(), saveAccounts() y createInsurances()
 
 ## Estructura del Proyecto
 La estructura del proyecto es la siguiente:
@@ -41,7 +42,6 @@ Copy code
 |       |-- cl.vice.back/
 |           |--config/
 |           |--controller/
-|           |--dto/
 |           |-- exception/
 |           |-- model/
 |           |-- repository/
