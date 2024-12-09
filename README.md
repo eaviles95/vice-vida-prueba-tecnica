@@ -1,4 +1,4 @@
-# Prueba técnica Muruna
+# Prueba técnica Vice Vida
 
 ## Descripción
 Este proyecto se desarrolló como prueba de conocimientos para postular a la empresa Vice Vida, fue desarrollado con Java 14, utilizando SpringBoot como framework, con una base de datos volátil HSQLDB y en el editor de código IntelliJ idea.
@@ -15,7 +15,6 @@ A continuación se detallan los pasos necesarios para configurar y ejecutar el p
 Clonar el Repositorio:
 
 ```bash
-Copy code
     git clone https://github.com/eaviles95/vice-vida-prueba-tecnica/
 ```
 ## Configurar la Base de Datos:
