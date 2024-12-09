@@ -26,7 +26,7 @@ debe generar una configuración de spring boot, con la que finalmente podrá lev
 Para probar los endpoints, puede acceder al siguiente enlace:
 
 ```swagger
-    http://localhost:8081/swagger-ui.html#
+    http://localhost:8081/swagger-ui/index.html#/
 ```
 Luego, debe accionar los endpoints de carga inicial de datos, éstos son saveClients(), saveAccounts() y createInsurances()
 
