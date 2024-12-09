@@ -52,7 +52,8 @@ Copy code
 |   |-- test
 |-- ...
 ```
-## Probar endpoints
+## Test
+Basta con entrar a los test desde IntelliJ para ejecutarlos.
 
 ## Contacto
 Para preguntas o comentarios, comuníquese con enrique.a.aviles.m@gmail.com.
