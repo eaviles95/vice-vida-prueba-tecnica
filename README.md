@@ -26,7 +26,6 @@ debe generar una configuración de spring boot, con la que finalmente podrá lev
 Para probar los endpoints, puede acceder al siguiente enlace:
 
 ```swagger
-Copy code
     http://localhost:8081/swagger-ui.html#
 ```
 
